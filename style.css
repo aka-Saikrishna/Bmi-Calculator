@@ -1,0 +1,76 @@
+:root{
+    --background-color: #f6f6f6;
+    --slider-color: #a3a3a3 ;
+    --input-number-color: #ebebeb;
+    --other-color: rgb(146, 125, 232);
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Roboto', sans-serif;
+    background-color: #f6f6f6;
+}
+
+.bmi-calculator{
+    border-radius: 10px;
+    padding: 3em;
+    margin: 8em;
+    height: 520px;
+    background-color: white;
+    box-shadow: 10px 8px 50px 5px #1b2b48;
+}
+
+h1{
+
+    text-shadow: rebeccapurple 0 0 10px;
+}
+.bmi-calculator-weight, .bmi-calculator-height{
+    margin-bottom: 2.2em;
+    width: 100%;
+}
+.weight-slider, .height-slider {
+    width: 100%;
+    height: 1px;
+    margin-bottom: 30px;
+    border-radius: 10px;
+    background-color: var(--slider-color);
+    outline: none;
+}
+/* input[type=range] {
+    appearance: none;
+
+} */
+
+input[type=range]:focus {
+    outline: none;
+}
+input[type=range]::-ms-track{
+    width: 100%;
+    cursor: pointer;
+}
+.btn{
+    text-align: center;
+    font-size: 1em;
+    color: white;
+    width: 100%;
+    margin-bottom: 10px;padding: 11px 32px;
+    transition: 0.2s;
+    border: none;
+    background-color: var(--other-color);
+    text-transform: uppercase;
+    cursor: pointer;
+}
+.btn:hover{
+    opacity: 0.8;
+}
+.evaluation-message{
+    margin: 10px 0;
+}
